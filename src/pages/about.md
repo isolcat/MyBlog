@@ -3,34 +3,35 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-Isolcat is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
+<h2 align="left">
+ <abc>
+  <br>Hi I'm isolcat!<br>
+  
+### 🏗️ Learning：
 
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
+ <code><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/></code>
+ <code><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/></code>
+ <code><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/></code>
+ <code><img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"/></code>
+ <code><img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"/></code>
+ <code><img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"/></code>
+ <code><img src="https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D"/></code>
 
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
+### 🏠 Blog：
+<table>
+  <tr>
+    <td>
+      <a href="https://juejin.cn/user/1170301184384622" target="_blank">
+        <img width="150" src="https://dd-static.jd.com/ddimg/jfs/t1/191855/4/28211/12576/632fd5e9Edf5b8607/3ea78b607f12776c.png"  alt="掘金">
+      </a>
+    </td>
+  </tr>
+</table>
 
-<div>
-  <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
-</div>
 
-## Tech Stack
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=isolcat)](https://github.com/anuraghazra/github-readme-stats)   
 
-This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
+### 📈 Activity Graph：
 
-## Features
+![](https://activity-graph.herokuapp.com/graph?username=isolcat&theme=github)
 
-Here are certain features of this site.
-
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
-
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).

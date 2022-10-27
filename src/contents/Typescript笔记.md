@@ -6,8 +6,7 @@ slug: ""
 featured: false
 draft: false
 tags:
-  - color-schemes
-  - docs
+  - Typescript
 ogImage: ""
 description:
   Typescript是js的超集

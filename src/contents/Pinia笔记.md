@@ -6,6 +6,7 @@ slug: 学习Pinia
 featured: true
 draft: false
 tags:
+  - pinia
   - docs
 ogImage: ""
 description:
