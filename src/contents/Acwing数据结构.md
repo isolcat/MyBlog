@@ -14,9 +14,9 @@ description:
 
 ## 链表和邻接表
 
-我们来创建链表的时候不会采用这种`创建动态链表`的方式，这种方式非常的慢，数据一旦多了会更慢，所以我们基本都用`数组模拟链表`,使用数组模拟链表最大的好处就是**快、精准**，之所以创建动态链表的方式更慢是因为在c++中，`new()`这个操作是非常慢的
+我们来创建链表的时候不会采用这种`创建动态链表`的方式，这种方式非常的慢，数据一旦多了会更慢，所以我们基本都用`数组模拟链表`,使用数组模拟链表最大的好处就是**快、精准**，之所以创建动态链表的方式更慢是因为在js中，`new()`这个操作是非常慢的
 
-```cpp
+```js
 struck Node
 {
 	int  val;
@@ -50,7 +50,7 @@ new Node();//非常慢
 
   代码示例：
 
-  ```cpp
+  ```js
   void add_to_head(int x)
   {
       //先存储值
@@ -70,7 +70,7 @@ new Node();//非常慢
 
  <img src="https://dd-static.jd.com/ddimg/jfs/t1/12226/11/19479/17826/63098b34E14451ade/f5efa96f93a8fa62.png" alt="image.png" style="zoom:50%;" />
 
-```cpp
+```js
 void add(int k,int x)
 {
     e[idx]=x;
@@ -86,7 +86,7 @@ void add(int k,int x)
 
  <img src="https://dd-static.jd.com/ddimg/jfs/t1/8308/28/19149/19026/63098c62E540598c9/ad41b5f3c267d28c.png" alt="image.png" style="zoom:67%;" />
 
-```cpp
+```js
 void remove(int k)
 {
     //直接跳过中间的节点即可
@@ -114,7 +114,7 @@ e[n]表示这个点的值，l[n]表示这个`点左边的值`，r[n]表示这个
 
 代码示例：
 
-```cpp
+```js
 void add(int k,int x)
 {
     e[idx]=x;
@@ -127,7 +127,7 @@ void add(int k,int x)
 
 在下标`k`的点的`左边`插入一个点：
 
-```cpp
+```js
 add[l[k],x]//在k的左边这个点的右边插入x
 ```
 
@@ -135,7 +135,7 @@ add[l[k],x]//在k的左边这个点的右边插入x
 
 <img src="https://dd-static.jd.com/ddimg/jfs/t1/156624/20/29977/16267/630ecfd9E4e4b23f9/8c9043b0b554fd7e.png" alt="image.png" style="zoom:67%;" />
 
-```cpp
+```js
 void remove(int k)
 {
     r[l[k]]=r[k];
@@ -151,7 +151,7 @@ void remove(int k)
 
 每次只在其中的`一端`进行操作
 
-```cpp
+```js
 // tt表示栈顶
 int stk[N], tt = 0;
 
@@ -181,7 +181,7 @@ if (tt > 0)
 
 ### 普通队列：
 
-```cpp
+```js
 // hh 表示队头，tt表示队尾
 int q[N], hh = 0, tt = -1;
 
@@ -203,7 +203,7 @@ if (hh <= tt)
 
 ### 循环队列：
 
-```cpp
+```js
 // hh 表示队头，tt表示队尾的后一个位置
 int q[N], hh = 0, tt = 0;
 
@@ -231,7 +231,7 @@ if (hh != tt)
 
 <img src="https://dd-static.jd.com/ddimg/jfs/t1/117815/4/28262/10955/631013b1E470f2f5a/550935c6da274e99.png" alt="image.png" style="zoom:80%;" />
 
-```cpp
+```js
 常见模型：找出每个数左边离它最近的比它大/小的数
 int tt = 0;
 for (int i = 1; i <= n; i ++ )
@@ -249,7 +249,7 @@ for (int i = 1; i <= n; i ++ )
 
 最经典的应用就是`求滑动窗口的最小值/最大值`
 
-```cpp
+```js
 常见模型：找出滑动窗口中的最大值/最小值
 int hh = 0, tt = -1;
 for (int i = 0; i < n; i ++ )
@@ -273,7 +273,7 @@ KMP我们先来尝试一下`暴力做法`:
 
 ![image.png](https://dd-static.jd.com/ddimg/jfs/t1/210465/35/24907/6949/6314572dE0e00167b/eda910361562a0a5.png)
 
-```c++
+```js
 for (int i = 1; i <= n; i ++ )
 {
     bool flag = true;
@@ -294,7 +294,7 @@ for (int i = 1; i <= n; i ++ )
 
 匹配过程：<img src="https://dd-static.jd.com/ddimg/jfs/t1/191259/12/27719/30441/631462c5E272a444e/2ebc1c8cec357e05.png" alt="image.png" style="zoom:80%;" />
 
-```cpp
+```js
 // s[]是长文本，p[]是模式串，n是s的长度，m是p的长度
 求模式串的Next数组：
 for (int i = 2, j = 0; i <= m; i ++ )
@@ -331,7 +331,7 @@ for (int i = 1, j = 0; i <= n; i ++ )
 
 将字母存储在里面，每次都从`根节点`开始存储，如果前面有相同的路径，就不需要再重复写一个路线，继续沿着之前相同的路线走，直到出现不同的字母才产生新的分支(例如这里的abcdef和abdef，ab是两个共有的，就无需重写，直接在b处再分开即可) 单词的结尾处会加上一个`标记`，便于后续的查找
 
-```cpp
+```js
 int son[N][26], cnt[N], idx;//用数组来模拟指针
 // 0号点既是根节点，又是空节点
 // son[][]存储树中每个节点的子节点
@@ -383,7 +383,7 @@ int query(char *str)
 
 `优化方式：路径压缩`：当我们找到根节点后，将这条路径上的所有节点全部指向根节点，之后再进行查询的话就直接可以指向root了，时间复杂度几乎达到了O(1)
 
-```cpp
+```js
 (1)朴素并查集：
 
     int p[N]; //存储每个点的祖宗节点
