@@ -1,19 +1,19 @@
 ---
 author: Sat Naing
 datetime: 2022-09-23T15:22:00Z
-title: Adding new posts in AstroPaper theme
-slug: adding-new-posts-in-astropaper-theme
+title: Adding new posts in Isolcat theme
+slug: adding-new-posts-in-Isolcat-theme
 featured: true
 draft: false
 tags:
   - docs
 ogImage: ""
 description:
-  Some rules & recommendations for creating or adding new posts using AstroPaper
+  Some rules & recommendations for creating or adding new posts using Isolcat
   theme.
 ---
 
-Here are some rules/recommendations, tips & ticks for creating new posts in AstroPaper blog theme.
+Here are some rules/recommendations, tips & ticks for creating new posts in Isolcat blog theme.
 
 ## Table of contents
 
@@ -74,7 +74,7 @@ For instance, if you want to place your table of contents just under the intro p
 # some frontmatter
 ---
 
-Here are some recommendations, tips & ticks for creating new posts in AstroPaper blog theme.
+Here are some recommendations, tips & ticks for creating new posts in Isolcat blog theme.
 
 ## Table of contents
 
@@ -83,7 +83,7 @@ Here are some recommendations, tips & ticks for creating new posts in AstroPaper
 
 ## Headings
 
-There's one thing to note about headings. The AstroPaper blog posts use title (title in the frontmatter) as the main heading of the post. Therefore, the rest of the heading in the post should be using h2 \~ h6.
+There's one thing to note about headings. The Isolcat blog posts use title (title in the frontmatter) as the main heading of the post. Therefore, the rest of the heading in the post should be using h2 \~ h6.
 
 This rule is not mandatory, but highly recommended for visual and SEO purposes.
 

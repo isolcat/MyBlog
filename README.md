@@ -1,4 +1,4 @@
-# AstroPaper 📄
+# Isolcat 📄
 
 ![astro-paper](https://user-images.githubusercontent.com/53733092/192439847-534ea3f9-3294-4509-b732-5810bc2db09a.png)
 ![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
@@ -6,7 +6,7 @@
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white&style=for-the-badge)](https://conventionalcommits.org)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=for-the-badge)](http://commitizen.github.io/cz-cli/)
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. This theme is designed and crafted based on [my personal blog](https://satnaing.dev/blog).
+Isolcat is a minimal, responsive and SEO-friendly Astro blog theme. This theme is designed and crafted based on [my personal blog](https://satnaing.dev/blog).
 
 This theme is aimed to be accessible out of the box. Light and dark mode are supported by default and additional color schemes can also be configured.
 
@@ -25,7 +25,7 @@ This theme is self-documented \_ which means articles/posts in this theme can al
 
 ## 🚀 Project Structure
 
-Inside of AstroPaper, you'll see the following folders and files:
+Inside of Isolcat, you'll see the following folders and files:
 
 ```bash
 /
@@ -61,9 +61,9 @@ All blog posts are stored in `src/contents/` directory.
 
 Documentation can be read in two formats\_ _markdown_ & _blog post_.
 
-- Configuration - [markdown](src/contents/how-to-configure-astropaper-theme.md) | [blog post](https://astro-paper.pages.dev/posts/how-to-configure-astropaper-theme/)
-- Add Posts - [markdown](src/contents/adding-new-post.md) | [blog post](https://astro-paper.pages.dev/posts/adding-new-posts-in-astropaper-theme/)
-- Customize Color Schemes - [markdown](src/contents/customizing-astropaper-theme-color-schemes.md) | [blog post](https://astro-paper.pages.dev/posts/customizing-astropaper-theme-color-schemes/)
+- Configuration - [markdown](src/contents/how-to-configure-Isolcat-theme.md) | [blog post](https://astro-paper.pages.dev/posts/how-to-configure-Isolcat-theme/)
+- Add Posts - [markdown](src/contents/adding-new-post.md) | [blog post](https://astro-paper.pages.dev/posts/adding-new-posts-in-Isolcat-theme/)
+- Customize Color Schemes - [markdown](src/contents/customizing-Isolcat-theme-color-schemes.md) | [blog post](https://astro-paper.pages.dev/posts/customizing-Isolcat-theme-color-schemes/)
 - Predefined Color Schemes - [markdown](src/contents/predefined-color-schemes.md) | [blog post](https://astro-paper.pages.dev/posts/predefined-color-schemes/)
 
 ## 💻 Tech Stack

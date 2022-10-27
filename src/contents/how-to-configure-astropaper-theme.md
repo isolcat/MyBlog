@@ -1,18 +1,18 @@
 ---
 author: Sat Naing
 datetime: 2022-09-23T04:58:53Z
-title: How to configure AstroPaper theme
-slug: how-to-configure-astropaper-theme
+title: How to configure Isolcat theme
+slug: how-to-configure-Isolcat-theme
 featured: true
 draft: false
 tags:
   - configuration
   - docs
 ogImage: ""
-description: How you can make AstroPaper theme absolutely yours.
+description: How you can make Isolcat theme absolutely yours.
 ---
 
-AstroPaper is a highly customizable Astro blog theme. With AstroPaper, you can customize everything according to your personal taste. This article will explain how you can make some customizations easily in the config file.
+Isolcat is a highly customizable Astro blog theme. With Isolcat, you can customize everything according to your personal taste. This article will explain how you can make some customizations easily in the config file.
 
 ## Table of contents
 
@@ -28,7 +28,7 @@ export const SITE = {
   website: "https://astro-paper.pages.dev/",
   author: "Sat Naing",
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: "AstroPaper",
+  title: "Isolcat",
   ogImage: "default-og.png",
   lightAndDarkMode: true,
   postPerPage: 3,
@@ -51,7 +51,7 @@ Here are SITE configuration options
 
 You can specify site's title or logo image in `src/config.ts` file.
 
-![An arrow pointing at the website logo](https://res.cloudinary.com/noezectz/v1663911318/astro-paper/AstroPaper-logo-config_goff5l.png)
+![An arrow pointing at the website logo](https://res.cloudinary.com/noezectz/v1663911318/astro-paper/Isolcat-logo-config_goff5l.png)
 
 ```js
 // file: src/config.ts
@@ -63,9 +63,9 @@ export const LOGO_IMAGE = {
 };
 ```
 
-If you specify `LOGO_IMAGE.enable` => `false`, AstroPaper will automatically convert `SITE.title` to the main site text logo.
+If you specify `LOGO_IMAGE.enable` => `false`, Isolcat will automatically convert `SITE.title` to the main site text logo.
 
-If you specify `LOGO_IMAGE.enable` => `true`, AstroPaper will use the logo image as the site's main logo.
+If you specify `LOGO_IMAGE.enable` => `true`, Isolcat will use the logo image as the site's main logo.
 
 You have to specify `logo.png` or `logo.svg` under `/public/assets` directory. Currently, only svg and png image file formats are supported. (**_Important!_** _logo name has to be logo.png or logo.svg)_
 
@@ -122,4 +122,4 @@ export const SOCIALS: SocialsObject = [
 
 ## Conclusion
 
-This is the brief specification of how you can customize this theme. You can customize more if you know some coding. For customizing styles, please read [this article](/posts/customizing-astropaper-theme-color-schemes). Thanks for reading.✌🏻
+This is the brief specification of how you can customize this theme. You can customize more if you know some coding. For customizing styles, please read [this article](/posts/customizing-Isolcat-theme-color-schemes). Thanks for reading.✌🏻

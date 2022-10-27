@@ -15,7 +15,7 @@ description:
   using NextJS and a headless CMS."
 ---
 
-> This article is originally from my [blog post](https://satnaing.dev/blog/posts/how-do-i-develop-my-portfolio-and-blog). I put this article to demonstrate how you can write blog posts/articles using AstroPaper theme.
+> This article is originally from my [blog post](https://satnaing.dev/blog/posts/how-do-i-develop-my-portfolio-and-blog). I put this article to demonstrate how you can write blog posts/articles using Isolcat theme.
 
 My experience about developing my first portfolio website and a blog using NextJS and a headless CMS.
 

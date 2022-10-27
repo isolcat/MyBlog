@@ -1,5 +1,5 @@
 ---
-title: How to connect AstroPaper blog with Forestry CMS
+title: How to connect Isolcat blog with Forestry CMS
 author: Sat Naing
 datetime: 2022-09-21T05:17:19Z
 slug: how-to-connect-astro-paper-blog-with-forestry-cms
@@ -9,19 +9,19 @@ tags:
   - docs
   - forestry-cms
   - astro-paper
-ogImage: https://res.cloudinary.com/noezectz/v1663745737/astro-paper/astropaper-x-forestry-og_kqfwp0.png
+ogImage: https://res.cloudinary.com/noezectz/v1663745737/astro-paper/Isolcat-x-forestry-og_kqfwp0.png
 description:
   Step by step process of connecting Astro-Paper blog theme with Forestry
   Headless CMS.
 ---
 
-In this article, I will explain step by step process of connecting AstroPaper theme with the Forestry headless CMS. So, let's get started 🎉
+In this article, I will explain step by step process of connecting Isolcat theme with the Forestry headless CMS. So, let's get started 🎉
 
 ## Table of contents
 
 ## What is Forestry?
 
-[Forestry](https://forestry.io/ "Forestry Website") is a git-based headless CMS and we can manage our markdown contents easily by using that. Although it is not an open-sourced CMS, it has a good free plan by which we can import up to 3 sites (3 repositories). In this article, I'll demonstrate how we can use Forestry as git-based CMS of our AstroPaper blog theme.
+[Forestry](https://forestry.io/ "Forestry Website") is a git-based headless CMS and we can manage our markdown contents easily by using that. Although it is not an open-sourced CMS, it has a good free plan by which we can import up to 3 sites (3 repositories). In this article, I'll demonstrate how we can use Forestry as git-based CMS of our Isolcat blog theme.
 
 ## Login / Register an account at Forestry.io
 
@@ -29,13 +29,13 @@ First of all, you have to create an account at [Forestry website](https://app.fo
 
 ![Forestry Login page](https://res.cloudinary.com/noezectz/v1663739096/astro-paper/Forestry-io_hk5yzv.png)
 
-## Import AstroPaper site (repository)
+## Import Isolcat site (repository)
 
 This part is importing the repository to Forestry and a little bit of set up process.
 
 ### Add Site
 
-After logging in/signing up an account, import your AstroPaper site by clicking "Add Site" button.
+After logging in/signing up an account, import your Isolcat site by clicking "Add Site" button.
 
 ![Forestry 'My sites' page](https://res.cloudinary.com/noezectz/v1663739752/astro-paper/Forestry-io_1_z1bdyd.png)
 

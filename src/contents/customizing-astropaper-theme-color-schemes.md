@@ -1,7 +1,7 @@
 ---
 author: Sat Naing
 datetime: 2022-09-25T15:20:35Z
-title: Customizing AstroPaper theme color schemes
+title: Customizing Isolcat theme color schemes
 slug: ""
 featured: false
 draft: false
@@ -11,7 +11,7 @@ tags:
 ogImage: ""
 description:
   How you can enable/disable light & dark mode; and customize color schemes
-  of AstroPaper theme.
+  of Isolcat theme.
 ---
 
 This post will explain how you can enable/disable light & dark mode for the website. Moreover, you'll learn how you can customize color schemes of the entire website.
@@ -20,7 +20,7 @@ This post will explain how you can enable/disable light & dark mode for the webs
 
 ## Enable/disable light & dark mode
 
-AstroPaper theme will include light and dark mode by default. In other words, there will be two color schemes\_ one for light mode and another for dark mode. This default behavior can be disabled in SITE configuration object of the `src/config.ts` file.
+Isolcat theme will include light and dark mode by default. In other words, there will be two color schemes\_ one for light mode and another for dark mode. This default behavior can be disabled in SITE configuration object of the `src/config.ts` file.
 
 ```js
 // file: src/config.ts
@@ -28,7 +28,7 @@ export const SITE = {
   website: "https://astro-paper.pages.dev/",
   author: "Sat Naing",
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: "AstroPaper",
+  title: "Isolcat",
   ogImage: "og-default.png",
   lightAndDarkMode: true, // true by default
   postPerPage: 3,
@@ -75,7 +75,7 @@ The **primaryColorScheme** variable can hold three values\_ `"light"`, `"dark"`,
 
 ## Customize color schemes
 
-Both light & dark color schemes of AstroPaper theme can be customized. You can do this in `src/styles/base.css` file.
+Both light & dark color schemes of Isolcat theme can be customized. You can do this in `src/styles/base.css` file.
 
 ```css
 /* file: src/styles/base.css */
@@ -104,7 +104,7 @@ Both light & dark color schemes of AstroPaper theme can be customized. You can d
 }
 ```
 
-In AstroPaper theme, `:root` is the light color scheme and `.theme-dark` is the dark color scheme. If you want to customize your custom color scheme, it is **_recommended_** that you set light color scheme inside `:root` and dark color scheme inside `.theme-dark`.
+In Isolcat theme, `:root` is the light color scheme and `.theme-dark` is the dark color scheme. If you want to customize your custom color scheme, it is **_recommended_** that you set light color scheme inside `:root` and dark color scheme inside `.theme-dark`.
 
 Colors are declared in CSS custom property (CSS Variable) notation. Color property values are written in rgb values. (Note: instead of rgb(40, 39, 40), only specify `40, 39, 40`)
 

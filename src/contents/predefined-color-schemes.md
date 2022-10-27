@@ -9,13 +9,13 @@ tags:
   - color-schemes
 ogImage: ""
 description:
-  Some of the well-crafted, predefined color schemes for AstroPaper blog
+  Some of the well-crafted, predefined color schemes for Isolcat blog
   theme.
 ---
 
-I've crafted some predefined color schemes for this AstroPaper blog theme. You can replace these color schemes with the original ones.
+I've crafted some predefined color schemes for this Isolcat blog theme. You can replace these color schemes with the original ones.
 
-If you don't know how you can configure color schemes, check [this blog post](customizing-astropaper-theme-color-schemes.md).
+If you don't know how you can configure color schemes, check [this blog post](customizing-Isolcat-theme-color-schemes.md).
 
 ## Table of contents
 
