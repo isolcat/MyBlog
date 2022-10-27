@@ -1,8 +1,8 @@
 ---
-author: Sat Naing
-datetime: 2022-09-23T15:22:00Z
+author: isolcat
+datetime: 2022-09-3T15:22:00Z
 title: 十分钟快速入门Pinia
-slug: adding-new-posts-in-Isolcat-theme
+slug: 学习Pinia
 featured: true
 draft: false
 tags:
