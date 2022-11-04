@@ -1,6 +1,6 @@
 ---
 title: Acwing算法基础
-author: Sat Naing
+author: isolcat
 datetime: 2022-07-31T16:55:12.000+00:00
 slug: how-do-i-develop-my-portfolio-and-blog
 featured: false
