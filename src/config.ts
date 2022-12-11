@@ -40,13 +40,13 @@ export const SOCIALS: SocialsObject = [
   },
   {
     name: "Mail",
-    href: "z308750414@gmail.com",
-    active: true,
+    href: "#",
+    active: false,
   },
   {
     name: "Twitter",
-    href: "#",
-    active: false,
+    href: "https://twitter.com/isolcatZ",
+    active: true,
   },
   {
     name: "Twitch",
