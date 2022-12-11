@@ -3,7 +3,7 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-<# 🐱 Hi there! I'm @isolcat
+## 🐱 Hi there! I'm @isolcat
 
 > The past stops here, the future begins here
   
