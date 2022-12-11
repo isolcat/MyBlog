@@ -7,7 +7,7 @@ title: "About"
 
 > The past stops here, the future begins here
   
-##  My Tech Stack
+##  My Tech Stack:
   [![My Skills](https://skillicons.dev/icons?i=vue,vite,webpack,ts,git,html,css,js,nuxtjs,powershell,tailwind,jest&perline=4)](https://skillicons.dev)
 
 ##  Activity：
