@@ -26,22 +26,22 @@ export const SOCIALS: SocialsObject = [
   {
     name: "Facebook",
     href: "#",
-    active: true,
+    active: false,
   },
   {
     name: "Instagram",
     href: "#",
-    active: true,
+    active: false,
   },
   {
     name: "Linkedin",
     href: "#",
-    active: true,
+    active: false,
   },
   {
     name: "Mail",
     href: "z308750414@gmail.com",
-    active: false,
+    active: true,
   },
   {
     name: "Twitter",
