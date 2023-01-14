@@ -5,7 +5,7 @@ title: 纯CSS实现三角形
 featured: false
 draft: false
 tags:
-  - 面试
+  - 面试题
 ogImage: ""
 description: 纯CSS实现一个三角形
 ---
