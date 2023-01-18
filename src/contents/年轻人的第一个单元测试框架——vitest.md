@@ -1,7 +1,7 @@
 ---
 title: 年轻人的第一款单元测试框架———vitest
 datetime: 2023-1-17T16:38:11Z
-featured: false
+featured: true
 draft: false
 tags:
   - vue
