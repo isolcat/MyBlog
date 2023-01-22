@@ -36,3 +36,5 @@ bb().then(value => {
     console.log(value)
 })
 ```
+
+结果：![image.png](https://pic8.58cdn.com.cn/nowater/webim/big/n_v2cfa08398030745fca5937a5ac1e8a8be.png)
