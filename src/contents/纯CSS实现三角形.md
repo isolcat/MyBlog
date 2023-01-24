@@ -59,4 +59,5 @@ description: 纯CSS实现一个三角形
 ![image.png](https://ldbbs.ldmnq.com/bbs/topic/attachment/2023-1/8ace70a6-6edd-46ba-a0f7-4f25658cc45b.png)
 
 这样一个三角形便实现了
+具体代码：https://stackblitz.com/edit/web-platform-wqhwfy?file=index.html
 
