@@ -22,17 +22,17 @@ SSL为TLS的**前身**，他们两个都是加密协议，但现在绝大多数�
 
 加密和解密的规则是一样的算法
 
-<img src="https://pic1.58cdn.com.cn/nowater/webim/big/n_v2393563424a6e4318abf38f880ad6cdd2.png" alt="image.png" style="zoom:80%;" />
+![image.png](https://ldbbs.ldmnq.com/bbs/topic/attachment/2023-1/9aa5d3e4-0eda-4871-9ef9-338afc28920a.png)
 
 ## 非对称加密
 
-<img src="https://pic5.58cdn.com.cn/nowater/webim/big/n_v2e8b05e1421154edf89965e5350bf16bb.png" alt="image.png" style="zoom:80%;" />
+![image.png](https://ldbbs.ldmnq.com/bbs/topic/attachment/2023-1/a1a948fc-35be-4045-b408-80a34b1b66c0.png)
 
 非对称加密的核心就是用**两个密钥**来进行加密和解密，分别为`公开和私有`两种，公开的密钥是大家都知道的密钥，私有密钥是仅有持有方才有的。**一般来说私钥放在服务器里，数据经过公钥加密就只能被私钥解密，数据经过私钥加密就只能通过公钥解密**
 
 如果用在服务端里，就是服务端拥有公钥和私钥，然后公布公钥让客户端知道
 
-<img src="https://pic8.58cdn.com.cn/nowater/webim/big/n_v2814ceb02e775460eaf2855988bd3b35f.png" alt="image.png" style="zoom:80%;" />
+![image.png](https://ldbbs.ldmnq.com/bbs/topic/attachment/2023-1/6e12284e-50aa-4440-8238-a990f1bea1c2.png)
 
 ## SSL证书
 
