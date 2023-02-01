@@ -45,7 +45,7 @@ export const SOCIALS: SocialsObject = [
   },
   {
     name: "Twitter",
-    href: "https://twitter.com/isolcatZ",
+    href: "",
     active: true,
   },
   {
