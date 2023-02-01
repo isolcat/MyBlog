@@ -46,7 +46,7 @@ export const SOCIALS: SocialsObject = [
   {
     name: "Twitter",
     href: "",
-    active: true,
+    active: false,
   },
   {
     name: "Twitch",
