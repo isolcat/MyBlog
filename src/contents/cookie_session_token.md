@@ -13,7 +13,7 @@ http**无状态**，所以我们无法知道每次登录的是谁，要实现让
 
 ## cookie和session
 
-![image.png](https://pic1.58cdn.com.cn/nowater/webim/big/n_v21b022333041e4800b63e8316e0f8ab12.png)
+![image.png](https://ldbbs.ldmnq.com/bbs/topic/attachment/2023-2/d407616a-d34f-465e-b83d-84c9776654dd.png)
 
 但这里其实我们打开浏览器就可以看见保存了哪些cookie，如果浏览器被黑，用户账号和信息就会泄露，所以把**用户名和密码放在cookie里面是不安全的**
 
@@ -21,7 +21,7 @@ http**无状态**，所以我们无法知道每次登录的是谁，要实现让
 
 意思是**会话**，不同的网站对于每个用户的会话都设定了时间和唯一的id（**session ID**）这里的时间就是**结束会话的时间**，而这些信息就保存在**数据库**中
 
-![image.png](https://pic5.58cdn.com.cn/nowater/webim/big/n_v299eead38f8af496bb915461add17cd88.png)
+![image.png](https://ldbbs.ldmnq.com/bbs/topic/attachment/2023-2/c3eec108-98fb-4a9e-b922-faca345406dc.png)
 
 Session id即使被黑客拿到也没有多大的作用
 
@@ -37,17 +37,17 @@ cookie存在客户端
 
 session存在服务端
 
- ![image.png](https://pic1.58cdn.com.cn/nowater/webim/big/n_v2d9df8af7e510447db4500413337a3c2e.png)
+![image.png](https://ldbbs.ldmnq.com/bbs/topic/attachment/2023-2/d5a7c4b3-8b46-4cf1-a15b-7d04efcb4f86.png))
 
 ## token
 
 JWT：JSON Web Token
 
-![image.png](https://pic5.58cdn.com.cn/nowater/webim/big/n_v20c595c1d395f4b63805d140611536344.png)
+![image.png](https://ldbbs.ldmnq.com/bbs/topic/attachment/2023-2/d16279da-1141-441b-8723-f9c7e433dd36.png)
 
 jwt组成：
 
-![image.png](https://pic2.58cdn.com.cn/nowater/webim/big/n_v24aae9639ffd2418fb9871703f835c9a6.png)
+![image.png](https://ldbbs.ldmnq.com/bbs/topic/attachment/2023-2/a59b9d5b-bce4-4f3d-9332-2727f54d56de.png)
 
 ## 总结
 
