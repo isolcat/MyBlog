@@ -16,9 +16,9 @@ description: HTTP/1.1，HTTP/2和HTTP/3的区别
 
 在1.1版本当中，必须收到http响应之后才能进行下一次http请求
 
-![image.png](https://pic6.58cdn.com.cn/nowater/webim/big/n_v2a95b2f6b891d4b05b88921cdeca3ccbf.png)
+![image.png](https://ldbbs.ldmnq.com/bbs/topic/attachment/2023-2/17882d4b-3492-44a6-b4b3-a46e04ebd0dd.png)
 
-<img src="https://pic8.58cdn.com.cn/nowater/webim/big/n_v25eb5abab4ba5417fa7da1e65e191e292.png" alt="image.png" style="zoom:67%;" />
+![image.png](https://ldbbs.ldmnq.com/bbs/topic/attachment/2023-2/11891685-7e77-4b32-9fa1-e39c407f6d8e.png)
 
 ## HTTP/2
 
@@ -50,7 +50,7 @@ description: HTTP/1.1，HTTP/2和HTTP/3的区别
 
 核心：**整合**
 
-![image.png](https://pic6.58cdn.com.cn/nowater/webim/big/n_v2425a2c89af0f4c0e884c4e5942536f36.png)
+![image.png](https://ldbbs.ldmnq.com/bbs/topic/attachment/2023-2/5b2218a7-63b5-43b9-99fc-407468635931.png)
 
 **减少了来回带来的开销**，如果是恢复的会话，还直接实现0消耗
 
