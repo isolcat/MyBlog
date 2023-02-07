@@ -49,7 +49,8 @@ jwt组成：
 
 ![image.png](https://ldbbs.ldmnq.com/bbs/topic/attachment/2023-2/a59b9d5b-bce4-4f3d-9332-2727f54d56de.png)
 
-## token 和 cookie 也可以进行加密，为啥一定要用 JWT 呢?
+## token和cookie也可以进行加密，为啥一定要用JWT呢?
+
 Token 和 Cookie 都可以加密，并且它们都可以用于存储会话状态信息。但是，在一些特定情况下，JWT 比 Token 和 Cookie 更加适合。
 
 主要原因如下：
