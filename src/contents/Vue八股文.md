@@ -79,3 +79,19 @@ v-show 总是会进行编译和渲染的工作 - 它只是简单的在元素上�
 vue在做异步渲染的时候，是**批量进行**的渲染，不是每次数据发生了更新就马上进行渲染(同步渲染就会导致这样的结果)，这也就是为什么Vue是异步进行渲染的
 掘金这篇文章：https://juejin.cn/post/7177681326861418556
 
+## vue中的设计模式
+- 双向绑定（Two-way binding）
+- 状态管理模式（State Management Pattern）
+- 单向数据流（One-way Data Flow）
+- 组件化（Component-based Architecture）
+- 访问者模式（Visitor Pattern）
+- 观察者模式（Observer Pattern）
+这些模式在 Vue 中经常用于组织代码，提高代码复用性和代码维护性，使得 Vue 项目的维护更加容易
+
+## vue2和vue3的区别
+- 响应式系统：Vue 3 对响应式系统进行了改进，并且更加快速和可靠。
+- 代码量：Vue 3 相对于 Vue 2 更小，加载速度更快。
+- Composition API：Vue 3 引入了 Composition API，为组件的状态和行为提供了一种更灵活的编写方式。
+- 性能：Vue 3 对性能进行了改进，使用起来更加顺畅。
+- 静态检查：Vue 3 引入了静态检查，使得开发者更容易发现代码问题。
+
