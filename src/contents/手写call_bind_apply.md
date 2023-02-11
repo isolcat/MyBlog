@@ -14,89 +14,78 @@ description: 手写call、bind、apply
 
 ## 实现call方法：
 
-### 简易版本：
-
 ```js
-function fn(arg1,arg2){
-  console.log('fn执行了',this.name,arg1,arg2);
-  return '我是返回值'
-}
-let thisarg={
-  name: 'Yang'
-}
+Function.prototype.myCall = function (context) {
+  //判断调用对象
+  if (typeof this !== 'function') {
+    console.error('type error');
+  }
+  //获取参数(argument类数组)处理参数，截取第一个参数之后的所有参数
+  let args = [...arguments].slice(1);
+  result = null;
+  //判断context是否传入，如果未传入则设置为window
+  context = context || window;
+  //将调用函数设置为对象(将函数作为上下文的一个属性)
+  context.fn = this;
+  //使用上下文对象调用这个方法，并保存返回结果
+  result = context.fn(...args);
+  //删除刚刚新增的属性
+  delete context.fn;
+  return result;
+};
 
-//实现myCall
-function myCall(fn,thisarg,...args){
-  thisarg.fnName = fn  //核心：利用隐式绑定
-  const result= thisarg.fnName(...args)  //执行隐式绑定函数并返回结果
-  delete thisarg.fn //销毁隐式绑定函数
-  return result //返回值
+//测试代码：
+function person() {
+  console.log(this.name);
 }
+var cat = {
+  name: 'isolcat',
+};
 
-let result=myCall(fn,thisarg,'1',"2") //fn执行了 Yang 1 2
-console.log(result); //我是返回值
+person.myCall(cat);//isolcat
 ```
 
-#### 两个缺陷：
-
-- **若已经有 thisarg.fn 存在,则起名冲突**
-- **与原生fn.call(thisarg , ...args)的形式不同**
-
-### 进阶版本：
-
-**使用Symbol创建独一无二的隐式绑定this函数**
-
-```js
-function myCall(fn,thisarg,...args){
-  let fnName=Symbol()
-  thisarg[fnName]=fn
-  const result = thisarg[fnName](...args)
-  delete thisarg[fnName]
-  return result
-}
-```
-
-### 究极版本：
-
-**在 Function原型 添加 myCall方法 并完成 fn.myCall( )形式的调用**
-
-```js
-Function.prototype.myCall=function(thisarg,...args){
-  let fnName=Symbol()
-  thisarg[fnName]=this  //this指向被调用的函数fn
-  const result = thisarg[fnName](...args)
-  delete thisarg[fnName]
-  return result
-}
-
-let result=qaq.myCall(thisarg,'1',"2") //第一个参数用this代替
-//fn执行了 Yang 1 2
-console.log(result);
-//我是返回值
-```
-
-### 最简易版本
-
-```js
-    Function.prototype.myCall=function(thisArg,...args){
-      thisArg.t=this
-      return thisArg.t(...args)
-    }
-```
+代码演示：https://stackblitz.com/edit/js-mlt7xo?file=index.js
 
 ## 实现apply方法：
 
 传入的参数必须为数组，然后使用扩展运算符拆分出来
 
 ```js
-Function.prototype.myApply=function(thisarg,args){ 
-  let fnName=Symbol()
-  thisarg[fnName]=this  //this指向被调用的函数fn
-  const result = thisarg[fnName](...args)
-  delete thisarg[fnName]
-  return result
+Function.prototype.myApply = function (context, args) {
+  //判断调用对象是否为函数
+  if (typeof this !== 'function') {
+    console.log('type error');
+  }
+  let result = null;
+  //判断context是否存在，如果不存在的话则传入window
+  context = context || window;
+  //将函数作为上下文对象的一个属性
+  context.fn = this;
+  //使用上下文来调用这个方法，并保存返回结果
+  if (args) {
+    result = context.fn(...args);
+  } else {
+    result = context.fn();
+  }
+  //删除刚刚新增的属性
+  delete context.fn;
+  return result;
+};
+let obj = {
+  name: 'isolcat',
+};
+
+function add(a, b, c) {
+  console.log(`${a} + ${b} + ${c} = ${a + b + c}`);
 }
+
+add.myApply(obj, [1, 2, 3]);
+
+// 输出：1 + 2 + 3 = 6
 ```
+
+代码演示：https://stackblitz.com/edit/js-vpihjk?file=index.js
 
 ## 实现bind方法：
 
@@ -109,32 +98,37 @@ Function.prototype.myApply=function(thisarg,args){
 3.函数被new时，this指向回到最初
 
 ```js
-Function.prototype.myBind=function(thisarg,...args1){
-let fn= this
-if(new.target == undefined)
-{
-  return function(...args2){
-  let fnName=Symbol()
-  thisarg[fnName]=fn
-  const result = thisarg[fnName](...args1,...args2)
-  delete thisarg[fnName]
-  return result
-}
-}
-  else{
-    return fn()
+Function.prototype.myBind = function (context) {
+  //判断调用的对象是否为函数
+  if (typeof this !== 'function') {
+    console.lgo('error');
   }
-}
--------------------------------------------------------------
-function say(arg1,arg2){
-  console.log(this.age,arg1,arg2)
-}
-let person={
-  age:3
+  //获取参数
+  var args = [...arguments].slice(1),
+    fn = this;
+  //返回一个函数
+  return function Fn() {
+    //根据调用方式，传入不同的绑定值
+    return fn.apply(
+      this instanceof Fn ? this : context,
+      args.concat(...arguments)
+    );
+  };
+};
+//测试代码
+const obj = {
+  name: 'objName',
+};
+
+function func(a, b, c) {
+  console.log(this.name);
+  console.log(a, b, c);
 }
 
-let bindSay = say.bind(person,"我叫",'Yang')
+const bindFunc = func.myBind(obj, 1, 2);
 
-bindSay() //3 '我叫' 'Yang'
-new bindSay() //undefined '我叫' 'Yang' //调用了new this指向复原
+bindFunc(3);
+// 输出： objName
+//       1 2 3
 ```
+代码演示：https://stackblitz.com/edit/js-szmr6f?file=index.js
