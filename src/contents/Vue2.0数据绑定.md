@@ -2,7 +2,7 @@
 author: isolcat
 datetime: 2022-02-26T04:58:53Z
 title: Vue2数据绑定
-featured: true
+featured: false
 draft: false
 tags:
   - Vue2 
