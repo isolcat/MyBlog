@@ -7,7 +7,7 @@ draft: false
 tags:
   - Vue
 ogImage: ""
-description: 当我们创建一个Vue项目的时候，如果我们选上了Router选项，则会在项目那里生成一个`router`文件夹，并在该文件夹里有着`index.js`代码，这时候我们可以看看这个代码并且查看它的用途......
+description: 从Vue Router来看客户端与服务端路由,或许会有着更深入的理解
 ---
 # 从Vue Router来看客户端与服务端路由
 
