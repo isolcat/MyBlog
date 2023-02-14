@@ -5,7 +5,7 @@ title: Vue2数据绑定
 featured: false
 draft: false
 tags:
-  - Vue2 
+  - Vue
   - 面试题
 ogImage: ""
 description: vue2数据绑定相关面试题

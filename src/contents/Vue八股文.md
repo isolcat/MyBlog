@@ -5,7 +5,7 @@ featured: false
 draft: false
 tags:
   - 面试题
-  - vue
+  - Vue
 description: 一些面试中常考的Vue知识点
 ---
 # Vue八股文

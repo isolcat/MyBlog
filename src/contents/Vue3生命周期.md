@@ -5,7 +5,7 @@ title: Vue3生命周期函数
 featured: false
 draft: false
 tags:
-  - Vue3
+  - Vue
 ogImage: ""
 description:
   Vue3生命周期函数快速上手

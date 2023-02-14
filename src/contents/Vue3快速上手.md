@@ -6,7 +6,7 @@ slug: Vue3快速上手
 featured: false
 draft: false
 tags:
-  - Vue3
+  - Vue
 ogImage: ""
 description: Vue3相比vue2引入了组合式API，让开发更加流畅，更符合开发者的逻辑
 ---
