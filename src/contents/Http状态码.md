@@ -6,6 +6,7 @@ featured: false
 draft: false
 tags:
   - 面试题
+  - 计算机网络
 description: http状态码的区别
 ---
 
