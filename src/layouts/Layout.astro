@@ -58,7 +58,9 @@ const socialImageURL = new URL(
       rel="preload"
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap"
       as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
+      onload="
+      this.onload = null; this.rel = 'stylesheet'
+"
     />
 
     <script is:inline>
@@ -101,6 +103,20 @@ const socialImageURL = new URL(
       document.querySelector("html").className = theme;
     </script>
   </head>
+  <!-- head -->
+  <script
+    type="text/partytown"
+    src="https://www.googletagmanager.com/gtag/js?id=G-M5NKRB1T9P"
+  ></script>
+  <script type="text/partytown">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "GA_MEASUREMENT_ID");
+  </script>
+  <!-- more head -->
   <body>
     <slot />
   </body>
