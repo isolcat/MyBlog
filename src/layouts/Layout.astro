@@ -60,7 +60,7 @@ const socialImageURL = new URL(
       as="style"
       onload="
       this.onload = null; this.rel = 'stylesheet'
-"
+      "
     />
 
     <script is:inline>
@@ -102,21 +102,23 @@ const socialImageURL = new URL(
       // Put dark class on html tag to enable dark mode
       document.querySelector("html").className = theme;
     </script>
+    <script
+      type="text/partytown"
+      src="https://www.googletagmanager.com/gtag/js?id=G-M5NKRB1T9P"></script>
+    <script type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "GA_MEASUREMENT_ID");
+    </script>
+
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9924382533759874"
+      crossorigin="anonymous"></script>
   </head>
-  <!-- head -->
-  <script
-    type="text/partytown"
-    src="https://www.googletagmanager.com/gtag/js?id=G-M5NKRB1T9P"
-  ></script>
-  <script type="text/partytown">
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "GA_MEASUREMENT_ID");
-  </script>
-  <!-- more head -->
   <body>
     <slot />
   </body>
